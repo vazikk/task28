@@ -1,7 +1,13 @@
 # task28
-1) Сначала запустил инстансы и запустил k8s через kubespray <br>
-(скачал HELM) <br>
+1) Сначала запустил инстансы и запустил k8s через kubespray, (скачал HELM) <br>
+
+
+<br>
+
+
 `curl https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3 | bash` <br>
+
+<br>
 
 <img width="901" height="48" alt="image" src="https://github.com/user-attachments/assets/bacf09bb-be47-4880-af6f-9e82fe2d4f80" /> <br>
 
