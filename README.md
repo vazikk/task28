@@ -1,32 +1,44 @@
 # task28
-1) Сначала запустил инстансы и запустил k8s через kubespray, (скачал HELM) <br>
+1) <b> Сначала запустил инстансы и запустил k8s через kubespray, (скачал HELM) </b> <br>
 
-
-<br>
 
 
 `curl https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3 | bash` <br>
 
 <br>
+<br>
 
 <img width="901" height="48" alt="image" src="https://github.com/user-attachments/assets/bacf09bb-be47-4880-af6f-9e82fe2d4f80" /> <br>
 
 
+
 <img width="1553" height="253" alt="image" src="https://github.com/user-attachments/assets/3b59a520-aca3-43a9-9922-58ced0bde94a" /> <br>
+
+<br>
+<br>
 
 Установил StorageClass: local-path <br>
 
+
 `kubectl apply -f https://raw.githubusercontent.com/rancher/local-path-provisioner/v0.0.32/deploy/local-path-storage.yaml` <br>
+
+<br>
+
 
 Потом сделал его дефолтным: <br>
 
-kubectl patch storageclass local-path -p '{"metadata": {"annotations":{"storageclass.kubernetes.io/is-default-class":"true"}}}'
+`kubectl patch storageclass local-path -p '{"metadata": {"annotations":{"storageclass.kubernetes.io/is-default-class":"true"}}}`
 
-2) Нашел на habor процесс усатновки мониторинга <br>
+<br>
+<br>
+
+
+2) <b> Нашел на habor процесс усатновки мониторинга </b> <br>
+<br>
 
 1. Добавил репозиторий чартов <br>
 `helm repo add grafana https://grafana.github.io/helm-charts` <br>
-
+<br>
 
 Создал файл values.yaml, где укажем Helm установить помимо Loki и Promtail также Grafana и Prometheus: <br>
 ```
@@ -75,22 +87,49 @@ grafana:
     tag: 10.0.2
 ```
 
+<br>
+
 Создал namespace и установил чарт указав файл values: <br>
+
 `kubectl create namespace monitoring` <br>
+
 `helm install -n monitoring --values values.yaml loki-stack grafana/loki-stack` <br>
+
+<br>
 
 Убедился что всё установилось: <br>
 <img width="1460" height="637" alt="image" src="https://github.com/user-attachments/assets/3ca14ee8-c761-4334-a56d-b37a0cc8f7e4" /> <br>
+
 <img width="1558" height="249" alt="image" src="https://github.com/user-attachments/assets/fed0b2d9-798a-48aa-86cd-2feba09b6f51" /> <br>
+
 <img width="1601" height="290" alt="image" src="https://github.com/user-attachments/assets/be1bc24b-0567-481f-b69c-d615e631501a" /> <br>
 
+<br>
 Потом запустил nginx и apache: <br>
+
 <img width="918" height="307" alt="image" src="https://github.com/user-attachments/assets/82bef824-405d-4f41-9db4-05fbda179e6b" /> <br>
+
 <img width="745" height="253" alt="image" src="https://github.com/user-attachments/assets/28d8ce3b-7ec1-45cd-9562-10289f727676" /> <br>
 
+<br>
+
 Ну и собственно дашборды: <br>
+
 <img width="936" height="314" alt="image" src="https://github.com/user-attachments/assets/ab2f1528-8e94-4779-a365-759c3db997c9" /> <br>
 
+<img width="919" height="320" alt="image" src="https://github.com/user-attachments/assets/8be80a52-83fd-48f7-bb7f-b79cb6ad94c0" /> <br>
+
+<img width="920" height="290" alt="image" src="https://github.com/user-attachments/assets/266b9cbe-355d-4e11-81c8-a363010587a0" /> <br>
+
+<br>
+
+Логи apache: <br>
+
+
+<img width="1247" height="252" alt="image" src="https://github.com/user-attachments/assets/54e6aad6-ea01-419c-acf1-dc9fc057bb5d" /> <br>
+
+<br>
+Логи nginx: <br>
 
 
 
