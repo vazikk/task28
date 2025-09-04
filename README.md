@@ -131,6 +131,8 @@ grafana:
 <br>
 Логи nginx: <br>
 
+<img width="1606" height="246" alt="image" src="https://github.com/user-attachments/assets/0db5d542-dbb3-4225-a9d7-70cece51ce53" /> <br>
+
 
 
 
