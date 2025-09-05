@@ -157,9 +157,15 @@ grafana:
 
 <img width="988" height="311" alt="image" src="https://github.com/user-attachments/assets/e3bcaa4b-b2d5-440b-b535-9da9a44b83c3" /> <br>
 
+<br>
+Оповещение о падении: <br>
+
 <img width="859" height="343" alt="image" src="https://github.com/user-attachments/assets/73cdf198-dfcb-401a-9abd-891efb0c783a" /> <br>
 
+<br>
+Оповещение о востановлении: <br>
 
+<img width="815" height="331" alt="image" src="https://github.com/user-attachments/assets/d3e18d80-851c-486b-b7a2-56b4df3c6a84" />
 
 
 
