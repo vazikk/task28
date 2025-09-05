@@ -134,6 +134,33 @@ grafana:
 <img width="1606" height="246" alt="image" src="https://github.com/user-attachments/assets/0db5d542-dbb3-4225-a9d7-70cece51ce53" /> <br>
 
 
+3) Создание алерта в слак <br>
+
+Добавил в grafana направление для алерта: <br>
+
+<img width="892" height="622" alt="image" src="https://github.com/user-attachments/assets/54892ada-a020-4cf1-bdf7-c28dce4a0ebd" /> <br>
+
+<br>
+
+Проверил: <br>
+<img width="474" height="331" alt="image" src="https://github.com/user-attachments/assets/8e8204d1-729b-4869-8489-907a6f716540" /> <br>
+
+<br>
+
+Создал 1 дашборд для проверки работы node и настроил Alert rule для оповещения о падении: <br>
+
+<img width="939" height="387" alt="image" src="https://github.com/user-attachments/assets/40396c11-8472-4e9d-8ce1-9de7a186f4f8" /> <br>
+
+<img width="1273" height="647" alt="image" src="https://github.com/user-attachments/assets/c273aa6c-6010-4bb6-bef8-5ded2990d6ec" /> <br>
+
+Проверка работы: <br>
+
+<img width="988" height="311" alt="image" src="https://github.com/user-attachments/assets/e3bcaa4b-b2d5-440b-b535-9da9a44b83c3" /> <br>
+
+<img width="859" height="343" alt="image" src="https://github.com/user-attachments/assets/73cdf198-dfcb-401a-9abd-891efb0c783a" /> <br>
+
+
+
 
 
 
